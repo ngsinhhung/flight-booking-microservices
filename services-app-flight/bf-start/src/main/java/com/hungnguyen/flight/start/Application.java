@@ -1,4 +1,4 @@
-package com.flight.booking.flight;
+package com.hungnguyen.flight.start;
 
 
 import org.springframework.boot.SpringApplication;
