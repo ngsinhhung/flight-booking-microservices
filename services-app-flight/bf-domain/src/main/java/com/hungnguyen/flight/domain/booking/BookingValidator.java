@@ -1,7 +1,7 @@
 package com.hungnguyen.flight.domain.booking;
 
 import com.hungnguyen.flight.domain.booking.validation.BookingValidationRule;
-import com.hungnguyen.flight.domain.booking.validation.BookingSeatAvailableValidationRule;
+import com.hungnguyen.flight.domain.booking.validation.SeatCodeValidationRule;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class BookingValidator {
     {
         rulesByScenario = Map.of(
                 ScenarioValidation.CREATE,
-                List.of(BookingSeatAvailableValidationRule.class)
+                List.of(SeatCodeValidationRule.class)
         );
     }
 

@@ -4,23 +4,24 @@ import java.util.Optional;
 
 public class BookingCommand {
 
-    private Optional<Integer> flightId;
+    private Integer flightId;
 
-    private Optional<Integer> seatId;
+    private String seatCode;
 
-    public Optional<Integer> getFlightId() {
+
+    public Integer getFlightId() {
         return flightId;
     }
 
-    public void setFlightId(Optional<Integer> flightId) {
+    public void setFlightId(Integer flightId) {
         this.flightId = flightId;
     }
 
-    public Optional<Integer> getSeatId() {
-        return seatId;
+    public String getSeatCode() {
+        return seatCode;
     }
 
-    public void setSeatId(Optional<Integer> seatId) {
-        this.seatId = seatId;
+    public void setSeatCode(String seatCode) {
+        this.seatCode = seatCode;
     }
 }

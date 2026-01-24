@@ -6,7 +6,7 @@ public class BookingRequestDto {
 
     private Integer flightId;
 
-    private Integer seatId;
+    private String seatCode;
 
     public Integer getFlightId() {
         return flightId;
@@ -16,11 +16,11 @@ public class BookingRequestDto {
         this.flightId = flightId;
     }
 
-    public Integer getSeatId() {
-        return seatId;
+    public String getSeatCode() {
+        return seatCode;
     }
 
-    public void setSeatId(Integer seatId) {
-        this.seatId = seatId;
+    public void setSeatCode(String seatCode) {
+        this.seatCode = seatCode;
     }
 }
