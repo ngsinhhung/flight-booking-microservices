@@ -20,7 +20,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.flight.booking.flight</groupId>
+            <groupId>com.hungnguyen.flight</groupId>
             <artifactId>bf-rest</artifactId>
             <version>${project.version}</version>
         </dependency>

@@ -20,9 +20,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.flight.booking.flight</groupId>
+            <groupId>com.hungnguyen.flight</groupId>
             <artifactId>bf-app</artifactId>
-            <version>${project.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
