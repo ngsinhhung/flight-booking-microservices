@@ -1,9 +1,9 @@
 package com.hungnguyen.flight.app.booking;
 
 import com.hungnguyen.flight.domain.booking.BookingCommand;
+import org.springframework.stereotype.Component;
 
-import java.util.Optional;
-
+@Component
 public class BookingMapper {
 
     public BookingCommand mapDtoToCommand(BookingRequestDto bookingDto) {

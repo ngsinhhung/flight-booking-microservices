@@ -12,20 +12,17 @@
     <groupId>com.hungnguyen.flight</groupId>
     <artifactId>bf-infra</artifactId>
 
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <dependencies>
-
         <dependency>
             <groupId>com.hungnguyen.flight</groupId>
             <artifactId>bf-domain</artifactId>
             <version>${project.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.hungnguyen.flight</groupId>
+            <artifactId>bf-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,10 +36,11 @@
             <scope>runtime</scope>
         </dependency>
 
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.13</version>
+            <version>3.5.19</version>
         </dependency>
     </dependencies>
 

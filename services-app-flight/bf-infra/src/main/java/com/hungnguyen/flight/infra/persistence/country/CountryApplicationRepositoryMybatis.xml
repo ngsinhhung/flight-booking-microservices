@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hungnguyen.flight.infra.persistence.country.CountryMybatisMapper">
+
+    <resultMap id="CountryResultMap" type="com.hungnguyen.flight.app.country.CountryResponseDto">
+        <id property="countryId" column="country_id"/>
+        <result property="countryName" column="country_name"/>
+    </resultMap>
+
+    <select id="getCountries" resultMap="CountryResultMap">
+        SELECT country_id, country_name FROM country
+    </select>
+
+</mapper>
