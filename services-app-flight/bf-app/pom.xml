@@ -12,21 +12,10 @@
     <groupId>com.hungnguyen.flight</groupId>
     <artifactId>bf-app</artifactId>
 
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.hungnguyen.flight</groupId>
             <artifactId>bf-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.hungnguyen.flight</groupId>
-            <artifactId>bf-infra</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
