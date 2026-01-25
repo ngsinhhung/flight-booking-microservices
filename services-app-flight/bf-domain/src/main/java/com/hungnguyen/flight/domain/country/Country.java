@@ -1,20 +1,22 @@
-package com.hungnguyen.flight.infra.persistence.country;
+package com.hungnguyen.flight.domain.country;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
 @Table(name = "country")
+@DynamicUpdate
+@DynamicInsert
 public class Country {
 
     @Id
     @Column(name = "country_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long countryId;
 
-    @Column(name = "country_name")
+    @Column(name = "country_name", nullable = false)
     private String countryName;
 
     public Long getCountryId() {
