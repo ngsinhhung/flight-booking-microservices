@@ -5,6 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
-    <include file="src/Datamodels/V0/V0-0-1__create_flight_database.sql" relativeToChangelogFile="false"/>
+    <include file="src/Datamodels/V1/v1-0-0_init_schema.sql" relativeToChangelogFile="false"/>
+    <include file="src/Datamodels/V1/v1-1-0_feature_booking.sql" relativeToChangelogFile="false"/>
 
 </databaseChangeLog>
