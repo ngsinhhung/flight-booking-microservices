@@ -69,3 +69,11 @@ CREATE TABLE aircraft (
     seats_config INT
 )
 
+--rollback DROP TABLE user_roles;
+--rollback DROP TABLE flight;
+--rollback DROP TABLE airport;
+--rollback DROP TABLE country;
+--rollback DROP TABLE customer;
+--rollback DROP TABLE aircraft;
+--rollback DROP TABLE role;
+--rollback DROP TABLE sec_user;
